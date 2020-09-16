@@ -93,7 +93,7 @@ function answerQuiz3(){
 
 function showScore(){
     //スコア表示の処理をここに記述
-    document.getElementById('score-message').innerHTML= score;
+
     if(score >= 3){
         document.getElementById('score-message').innerHTML = '<p>3点；すばらしい！</p>';
     }else if(score >= 2){
