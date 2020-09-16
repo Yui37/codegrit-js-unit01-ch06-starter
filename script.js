@@ -9,7 +9,7 @@ let score = 0;
 function answerQuiz1(){
 //問題1の処理をここに記述
     const quiz_1 = document.getElementById('quiz-1');
-    const rightAnswer_1 = quiz_1.answer.value
+    const rightAnswer_1 = quiz_1.answer.value;
     switch(rightAnswer_1){
         case 'a':
             console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
@@ -38,7 +38,7 @@ function answerQuiz1(){
 function answerQuiz2(){
 //問題2の処理をここに記述
     const quiz_2 = document.getElementById('quiz-2');
-    const rightAnswer_2 = quiz_2.answer.value
+    const rightAnswer_2 = quiz_2.answer.value;
     switch(rightAnswer_2){
         case 'a':
             console.log(`2問目の ${quiz_2.answer.value} を選択しました`);
@@ -66,7 +66,7 @@ function answerQuiz2(){
 function answerQuiz3(){
 //問題3の処理をここに記述
     const quiz_3 = document.getElementById('quiz-3');
-    const rightAnswer_3 = quiz_3.answer.value
+    const rightAnswer_3 = quiz_3.answer.value;
     switch(rightAnswer_3){
         case 'a':
             console.log(`3問目の ${quiz_3.answer.value} を選択しました`);
@@ -95,12 +95,12 @@ function showScore(){
     //スコア表示の処理をここに記述
     document.getElementById('score-message').innerHTML= score;
     if(score >= 3){
-        document.getElementById('score-message').innerHTML = '<p>3点；すばらしい！</p>'
+        document.getElementById('score-message').innerHTML = '<p>3点；すばらしい！</p>';
     }else if(score >= 2){
-        document.getElementById('score-message').innerHTML = '<p>2点；おしい！</p>'
+        document.getElementById('score-message').innerHTML = '<p>2点；おしい！</p>';
     }else if(score >= 1){
-        document.getElementById('score-message').innerHTML = '<p>1点；まあまあ</p>'
+        document.getElementById('score-message').innerHTML = '<p>1点；まあまあ</p>';
     }else if(score <= 0){
-        document.getElementById('score-message').innerHTML = '<p>0点；残念</p>'
+        document.getElementById('score-message').innerHTML = '<p>0点；残念</p>';
     }       
 }
