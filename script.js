@@ -10,30 +10,46 @@ function answerQuiz1(){
 //問題1の処理をここに記述
     const quiz_1 = document.getElementById('quiz-1');
     const answer_1 = quiz_1.answer.value;
-    switch(answer_1){
-        case 'a':
-            console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
-            console.log('不正解です');
-            console.log(`現在のトータルスコア： ${score} `);
-            break;
-        case 'b':
-            console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
-            console.log('正解です');
-            // console.log(`現在のトータルスコア： ${score = score + 1} `);
-            console.log(`現在のトータルスコア： ${score++} `);
-            break;
-        case 'c':
-            console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
-            console.log('不正解です'); 
-            console.log(`現在のトータルスコア： ${score} `);
-            break;
-        default:
-            console.log('1問目の回答が選択されていません');
-            console.log('未回答です');
-            break;
+    if ( answer_1 = 'a' ){
+        console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
+        console.log('不正解です');
+        console.log(`現在のトータルスコア： ${score} `);
+    } else if (answer_1 = 'b') {
+        console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
+        console.log('正解です');
+        // console.log(`現在のトータルスコア： ${score = score + 1} `);
+        console.log(`現在のトータルスコア： ${++score} `);
+    } else if (answer_1 = 'c') {
+        console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
+        console.log('不正解です'); 
+        console.log(`現在のトータルスコア： ${score} `);
+    } else {
+        console.log('1問目の回答が選択されていません');
+        console.log('未回答です');
     }
 }
-
+    // switch(answer_1){
+    //     case 'a':
+    //         console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
+    //         console.log('不正解です');
+    //         console.log(`現在のトータルスコア： ${score} `);
+    //         break;
+    //     case 'b':
+    //         console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
+    //         console.log('正解です');
+    //         // console.log(`現在のトータルスコア： ${score = score + 1} `);
+    //         console.log(`現在のトータルスコア： ${++score} `);
+    //         break;
+    //     case 'c':
+    //         console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
+    //         console.log('不正解です'); 
+    //         console.log(`現在のトータルスコア： ${score} `);
+    //         break;
+    //     default:
+    //         console.log('1問目の回答が選択されていません');
+    //         console.log('未回答です');
+    //         break;
+    // }
 
 function answerQuiz2(){
 //問題2の処理をここに記述
@@ -43,7 +59,7 @@ function answerQuiz2(){
         case 'a':
             console.log(`2問目の ${quiz_2.answer.value} を選択しました`);
             console.log('正解です');
-            console.log(`現在のトータルスコア： ${score++} `);
+            console.log(`現在のトータルスコア： ${++score} `);
             break;
         case 'b':
             console.log(`2問目の ${quiz_2.answer.value} を選択しました`);
@@ -80,7 +96,7 @@ function answerQuiz3(){
         case 'c':
             console.log(`3問目の ${quiz_3.answer.value} を選択しました`);
             console.log('正解です');
-            console.log(`現在のトータルスコア： ${score++} `);
+            console.log(`現在のトータルスコア： ${++score} `);
             break;
         default:
             console.log('3問目の回答が選択されていません');
