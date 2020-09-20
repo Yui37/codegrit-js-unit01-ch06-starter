@@ -10,16 +10,16 @@ function answerQuiz1(){
 //問題1の処理をここに記述
     const quiz_1 = document.getElementById('quiz-1');
     const answer_1 = quiz_1.answer.value;
-    if ( answer_1 = 'a' ){
+    if ( answer_1 == 'a' ){
         console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
         console.log('不正解です');
         console.log(`現在のトータルスコア： ${score} `);
-    } else if (answer_1 = 'b') {
+    } else if (answer_1 == 'b' ) {
         console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
         console.log('正解です');
         // console.log(`現在のトータルスコア： ${score = score + 1} `);
         console.log(`現在のトータルスコア： ${++score} `);
-    } else if (answer_1 = 'c') {
+    } else if (answer_1 == 'c' ) {
         console.log(`1問目の ${quiz_1.answer.value} を選択しました`);
         console.log('不正解です'); 
         console.log(`現在のトータルスコア： ${score} `);
